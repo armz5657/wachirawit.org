@@ -1,0 +1,126 @@
+@font-face {
+    font-family: TH SarabunPSK;
+    src: url(font/TH-Sarabun-PSK/THSarabun.ttf);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    font-family: 'TH SarabunPSK', sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-family: 'TH SarabunPSK', sans-serif;
+    font-size:21px;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'TH SarabunPSK', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form {
+    font-size: larger;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'TH SarabunPSK', sans-serif;
+    font-size: medium;
+}
+
+button:hover {
+    transition: 0.2s;
+    background-color: #00ccff;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size:21px;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 2px solid #000000;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+    padding: 12px;
+}
+
+th {
+    background-color: #008075;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
