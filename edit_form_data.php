@@ -58,7 +58,7 @@ $conn->close();
     <h1><b>แก้ไขข้อมูลนักศึกษา</b></h1>
 
     <?php if ($data): ?>
-        <form action="update_data.php" method="POST">
+        <form action="edit_sql_data.php" method="POST">
             <input type="hidden" name="std_id" value="<?php echo $data['std_id']; ?>">
             <div class="form-group">
                 <label for="std_fname">ชื่อ:</label>
